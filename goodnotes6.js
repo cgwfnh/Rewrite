@@ -35,14 +35,14 @@ if (typeof $response == "undefined") {
  "Author": "chxm1023",
  "Telegram" : "https://t.me/chxm1023",
  "warning": "仅供学习，禁止转载或售卖",
- "purchase_date": "2022-09-09T09:09:09Z"
+ "purchase_date": "2024-09-09T09:09:09Z"
  };
   chxm1024.subscriber.subscriptions[(jsid)] = {
  "Author": "chxm1023",
  "Telegram" : "https://t.me/chxm1023",
  "warning": "仅供学习，禁止转载或售卖",
- "original_purchase_date": "2022-09-09T09:09:09Z",
- "purchase_date": "2022-09-09T09:09:09Z",
+ "original_purchase_date": "2024-09-09T09:09:09Z",
+ "purchase_date": "2024-09-09T09:09:09Z",
  "store" : "app_store",
  "ownership_type": "PURCHASED"
  };
