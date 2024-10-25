@@ -11,6 +11,7 @@
 [rewrite_local]
 ^https:\/\/isi\..*\.g.*\.(com\..*|com)\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-response-body https://raw.githubusercontent.com/cgwfnh/Rewrite/main/goodnotes6.js
 ^https:\/\/isi\..*\.g.*\.(com\..*|com)\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-request-header https://raw.githubusercontent.com/cgwfnh/Rewrite/main/goodnotes6.js
+^https:\/\/api/-cn\..*\.g.*\.(com\..*|com)\/.+\/(accounts\/whoami\/?(.*?)*$) url script-request-header https://raw.githubusercontent.com/cgwfnh/Rewrite/main/goodnotes6.js
 
 [mitm]
 hostname = isi.*.g*.com*
@@ -24,6 +25,7 @@ const chxm1024 = JSON.parse(typeof $response != "undefined" && $response.body ||
 const namea = "apple_access";
 const nameb = "crossplatform_access";
 const jsid = "com.goodnotes.gn6_one_time_unlock_3999";
+const maxfile = "freemium_max_documents_gnc";
 
   
 if (typeof $response == "undefined") {
@@ -49,8 +51,9 @@ if (typeof $response == "undefined") {
   chxm1024.subscriber.entitlements[(namea)] = JSON.parse(JSON.stringify(data));
   chxm1024.subscriber.entitlements[(nameb)] = JSON.parse(JSON.stringify(data));
   chxm1024.subscriber.entitlements[(namea)].product_identifier = (jsid);
-    chxm1024.subscriber.entitlements[(nameb)].product_identifier = (jsid);
-  chxm1023.body = JSON.stringify(chxm1024);
+  chxm1024.subscriber.entitlements[(nameb)].product_identifier = (jsid);
+} else if (chxm1024 && chxm1024.identity) {
+  chxm1024.identity.metadata_public[{maxfile}] = JSON.parse(JSON.stringffy(65535));
 }
-
+chxm1023.body = JSON.stringify(chxm1024);
 $done(chxm1023);
