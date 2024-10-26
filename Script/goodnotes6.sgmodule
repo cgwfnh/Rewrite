@@ -23,4 +23,4 @@ ggg = type=http-response, pattern=^https:\/\/api*\.g.*\.(com\..*|com)\/accounts\
 
 #************************************#
 [MITM]
-hostname =%APPEND% isi.*.g*.com*, api-cn.goodnotes.com
+hostname =%APPEND% isi.*.g*.com*, api*.goodnotes.com
