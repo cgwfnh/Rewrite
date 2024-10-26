@@ -39,7 +39,7 @@ if (typeof $response == "undefined") {
  "warning": "仅供学习，禁止转载或售卖",
  "purchase_date": "2024-09-09T09:09:09Z"
  };
-  chxm1024.subscriber.subscriptions[(jsid)] = {
+  chxm1024.subscriber.subscriptions[jsid] = {
  "Author": "chxm1023",
  "Telegram": "https://t.me/chxm1023",
  "warning": "仅供学习，禁止转载或售卖",
@@ -48,12 +48,12 @@ if (typeof $response == "undefined") {
  "store": "app_store",
  "ownership_type": "PURCHASED"
  };
-  chxm1024.subscriber.entitlements[(namea)] = JSON.parse(JSON.stringify(data));
-  chxm1024.subscriber.entitlements[(nameb)] = JSON.parse(JSON.stringify(data));
-  chxm1024.subscriber.entitlements[(namea)].product_identifier = jsid;
-  chxm1024.subscriber.entitlements[(nameb)].product_identifier = jsid;
+  chxm1024.subscriber.entitlements[namea] = JSON.parse(JSON.stringify(data));
+  chxm1024.subscriber.entitlements[nameb] = JSON.parse(JSON.stringify(data));
+  chxm1024.subscriber.entitlements[namea].product_identifier = jsid;
+  chxm1024.subscriber.entitlements[nameb].product_identifier = jsid;
 } else if (chxm1024 && chxm1024.identity) {
-  chxm1024.identity.metadata_public[(maxfile)] = JSON.parse(JSON.stringffy(65535));
+  chxm1024.identity.metadata_public[maxfile] = JSON.parse(JSON.stringffy(65535));
 }
 chxm1023.body = JSON.stringify(chxm1024);
 $done(chxm1023);
