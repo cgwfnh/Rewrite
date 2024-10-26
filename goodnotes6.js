@@ -11,10 +11,10 @@
 [rewrite_local]
 ^https:\/\/isi\..*\.g.*\.(com\..*|com)\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-response-body https://raw.githubusercontent.com/cgwfnh/Rewrite/main/goodnotes6.js
 ^https:\/\/isi\..*\.g.*\.(com\..*|com)\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-request-header https://raw.githubusercontent.com/cgwfnh/Rewrite/main/goodnotes6.js
-^https:\/\/api\-cn\.g.*\.(com\..*|com)\/accounts\/whoami\/?(.*?)*$ url script-response-body https://raw.githubusercontent.com/cgwfnh/Rewrite/main/goodnotes6.js
+^https:\/\/api*\.g.*\.(com\..*|com)\/accounts\/whoami\/?(.*?)*$ url script-response-body https://raw.githubusercontent.com/cgwfnh/Rewrite/main/goodnotes6.js
 
 [mitm]
-hostname = isi.*.g*.com*, api-cn.goodnotes.com
+hostname = isi.*.g*.com*, api*.goodnotes.com
 
 *************************************/
 
