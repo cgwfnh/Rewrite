@@ -50,10 +50,10 @@ if (typeof $response == "undefined") {
  };
   chxm1024.subscriber.entitlements[namea] = JSON.parse(JSON.stringify(data));
   chxm1024.subscriber.entitlements[nameb] = JSON.parse(JSON.stringify(data));
-  chxm1024.subscriber.entitlements[namea].product_identifier = jsid;
-  chxm1024.subscriber.entitlements[nameb].product_identifier = jsid;
+  chxm1024.subscriber.entitlements[namea].product_identifier = (jsid);
+  chxm1024.subscriber.entitlements[nameb].product_identifier = (jsid);
 } else if (chxm1024 && chxm1024.identity) {
-  chxm1024.identity.metadata_public[maxfile] = JSON.parse(JSON.stringffy(65535));
+  chxm1024.identity.metadata_public[maxfile] = JSON.parse(JSON.stringfy(65535));
 }
 chxm1023.body = JSON.stringify(chxm1024);
 $done(chxm1023);
