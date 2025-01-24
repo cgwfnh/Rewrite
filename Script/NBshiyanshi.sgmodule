@@ -2,8 +2,9 @@
  * NB实验室
  * 解锁会员
  * 
+ */
 [script]
-NBshiyanshi = type=http-response, pattern=^https?:\/\/www\.nobook\.com\/passport\/v5\/login\/(check|phone)$, requires-body=1, script-path=https://raw.githubusercontent.com/cgwfnh/Rewrite/main/NBshiyanshi.js
+NBshiyanshi = type=http-response, pattern=^https?:\/\/www\.nobook\.com\/passport\/v5\/login\/(check|phone)$, script-path=https://raw.githubusercontent.com/cgwfnh/Rewrite/main/NBshiyanshi.js, requires-body=true, timeout=60, tag=NB实验室
  
 [mitm]
 hostname = %APPEND% www.nobook.com
