@@ -34,9 +34,6 @@ hostname = www.nobook.com
           case 'phone_check':
             obj[key] = 0;     // 使用vip药品时，不检查登录状态。
             break;
-          case 'password_state:
-            obj[key]= 0;
-            break;
         }
       }
     }
