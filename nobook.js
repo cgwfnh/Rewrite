@@ -31,6 +31,9 @@ hostname = www.nobook.com
           case 'validity':
             obj[key] = 9999999999999; // 设置超长有效期
             break;
+          case 'phone_check':
+            obj[key] = 0;     // 使用vip药品时，不检查登录状态。
+            break;
         }
       }
     }
