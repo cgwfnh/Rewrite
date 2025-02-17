@@ -12,7 +12,7 @@ hostname = www.nobook.com
 // 核心功能：修改响应JSON，解锁会员
 (() => {
   const response = JSON.parse($response.body);
-  
+  console.log(JSON.stringify(response));
   // 递归遍历对象，修改会员相关字段
   function modifyFields(obj) {
     for (const key in obj) {
