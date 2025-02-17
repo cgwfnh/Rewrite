@@ -38,7 +38,8 @@ hostname = www.nobook.com
       }
     }
   }
-
+  
   modifyFields(response); // 执行修改
+  console.log(JSON.stringify(response));
   $done({ body: JSON.stringify(response) }); // 返回修改后的响应
 })();
