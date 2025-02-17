@@ -24,6 +24,8 @@ hostname = www.nobook.com
           case 'isVip':
           case 'vipStatus':
           case 'expireTime':
+          case 'vip':
+          case 'vip_endtime':
             obj[key] = 1; // 设置为激活状态
             break;
           case 'validity':
