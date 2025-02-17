@@ -29,6 +29,7 @@ hostname = www.nobook.com
             break;
           case 'validity':
           case 'vip_endtime':
+          case 'school_vip_endtime':
             obj[key] = 9999999999999; // 设置超长有效期
             break;
           case 'phone_check':
