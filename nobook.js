@@ -4,9 +4,9 @@
  * 
 [rewrite_local]
 ^https?:\/\/www\.nobook\.com\/passport\/v5\/login\/(check|phone) url script-response-body https://raw.githubusercontent.com/cgwfnh/Rewrite/main/nobook.js
-
+^https?:\/\/storage\-backend\.nobook\.com\/passport\/v5\/login\/(check|phone) url script-response-body https://raw.githubusercontent.com/cgwfnh/Rewrite/main/nobook.js
 [mitm]
-hostname = www.nobook.com
+hostname = www.nobook.com, storage-backend.nobook.com
 */
 
 // 核心功能：修改响应JSON，解锁会员
