@@ -25,10 +25,10 @@ hostname = www.nobook.com
           case 'vipStatus':
           case 'expireTime':
           case 'vip':
+          case 'vip_endtime':
             obj[key] = 1; // 设置为激活状态
             break;
           case 'validity':
-          case 'vip_endtime':
             obj[key] = 9999999999999; // 设置超长有效期
             break;
           case 'phone_check':
