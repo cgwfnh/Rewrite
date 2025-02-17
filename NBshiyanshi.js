@@ -7,7 +7,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/www\.nobook\.com\/passport\/v5\/login\/(check|phone)$ url script-response-body https://raw.githubusercontent.com/cgwfnh/Rewrite/main/NBshiyanshi.js
+^https?:\/\/www\.nobook\.com\/passport\/v5\/login\/(check|phone) url script-response-body https://raw.githubusercontent.com/cgwfnh/Rewrite/main/NBshiyanshi.js
 
 [mitm]
 hostname = www.nobook.com
