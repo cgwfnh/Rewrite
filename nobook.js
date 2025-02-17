@@ -36,6 +36,9 @@ hostname = www.nobook.com, storage-backend.nobook.com
           case 'role':
             obj[key] = 0;     // 使用vip药品时，不检查登录状态。
             break;
+          case 'checkLogin':
+            obj[key]= "noCheckLogin";
+            break;
         }
       }
     }
