@@ -31,7 +31,7 @@ hostname = www.nobook.com, storage-backend.nobook.com
           case 'validity':
           case 'vip_endtime':
           case 'school_vip_endtime':
-            obj[key] = 9999999999999; // 设置超长有效期
+            obj[key] = 4075002183; // 设置超长有效期
             break;
           case 'phone_check':
             obj[key] = 0;     // 使用vip药品时，不检查登录状态。
