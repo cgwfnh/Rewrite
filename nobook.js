@@ -37,9 +37,6 @@ hostname = www.nobook.com
           case 'password_state:
             obj[key]= 0;
             break;
-          case 'loginType':
-            obj[key] = '';
-            break;
         }
       }
     }
