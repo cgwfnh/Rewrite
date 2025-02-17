@@ -25,14 +25,20 @@ hostname = www.nobook.com
           case 'vipStatus':
           case 'expireTime':
           case 'vip':
-          case 'vip_endtime':
             obj[key] = 1; // 设置为激活状态
             break;
           case 'validity':
+          case 'vip_endtime':
             obj[key] = 9999999999999; // 设置超长有效期
             break;
           case 'phone_check':
             obj[key] = 0;     // 使用vip药品时，不检查登录状态。
+            break;
+          case 'password_state:
+            obj[key]= 0;
+            break;
+          case 'loginType':
+            obj[key] = '';
             break;
         }
       }
