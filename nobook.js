@@ -5,8 +5,9 @@
 [rewrite_local]
 ^https?:\/\/www\.nobook\.com\/passport\/v5\/login\/(check|phone) url script-response-body https://raw.githubusercontent.com/cgwfnh/Rewrite/main/nobook.js
 ^https?:\/\/storage\-backend\.nobook\.com\/passport\/v5\/login\/(check|phone) url script-response-body https://raw.githubusercontent.com/cgwfnh/Rewrite/main/nobook.js
+^https?:\/\/console\-v6\.nobook\.com\/v1\/resource\/all url script-response-body https://raw.githubusercontent.com/cgwfnh/Rewrite/main/nobook.js
 [mitm]
-hostname = www.nobook.com, storage-backend.nobook.com
+hostname = www.nobook.com, storage-backend.nobook.com, console-v6.nobook.com
 */
 
 // 核心功能：修改响应JSON，解锁会员
@@ -33,14 +34,8 @@ hostname = www.nobook.com, storage-backend.nobook.com
           case 'school_vip_endtime':
             obj[key] = 4075002183; // 设置超长有效期
             break;
-          case 'phone_check':
-            obj[key] = 0;     // 使用vip药品时，不检查登录状态。
-            break;
-          case 'loginType':
-            obj[key]= 'noCheckLogin';
-            break;
-          case 'action':
-            obj[key]= 'noLogin';
+          case 'app_resource_vip':
+            obj[key] = 0;     // 使用标记有vip的实验模版。
             break;
         }
       }
