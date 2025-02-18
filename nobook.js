@@ -35,6 +35,7 @@ hostname = www.nobook.com, storage-backend.nobook.com, console-v6.nobook.com
             obj[key] = 4075002183; // 设置超长有效期
             break;
           case 'app_resource_vip':
+          case 'app_resource':
             obj[key] = 0;     // 使用标记有vip的实验模版。
             break;
         }
