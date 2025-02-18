@@ -13,7 +13,7 @@ hostname = www.nobook.com, storage-backend.nobook.com, console-v6.nobook.com
 // 核心功能：修改响应JSON，解锁会员
 (() => {
   const response = JSON.parse($response.body);
-  console.log(JSON.stringify(response));
+  //console.log(JSON.stringify(response));
   // 递归遍历对象，修改会员相关字段
   function modifyFields(obj) {
     for (const key in obj) {
@@ -44,6 +44,6 @@ hostname = www.nobook.com, storage-backend.nobook.com, console-v6.nobook.com
   }
   
   modifyFields(response); // 执行修改
-  console.log(JSON.stringify(response));
+  //console.log(JSON.stringify(response));
   $done({ body: JSON.stringify(response) }); // 返回修改后的响应
 })();
