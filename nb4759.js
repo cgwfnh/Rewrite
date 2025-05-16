@@ -3,7 +3,7 @@
  * 解锁会员
  * 
 [rewrite_local]
-^https?:\/\/app\-v3(-qn)\.nobook\.com\/app\-resource\/*\/*\/4759.js url script-response-body https://raw.githubusercontent.com/cgwfnh/Rewrite/main/nb4759.js
+^https?:\/\/app-v3(-qn)?\.nobook\.com\/app-resource\/.*\/.*\/4759.js url script-response-body https://raw.githubusercontent.com/cgwfnh/Rewrite/main/nb4759.js
 [mitm]
 hostname = *.nobook.com
 */
